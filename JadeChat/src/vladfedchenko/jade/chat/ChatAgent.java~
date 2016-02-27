@@ -1,0 +1,15 @@
+package vladfedchenko.jade.chat;
+
+import jade.core.*;
+
+/**
+ * Created by vladfedchenko on 22.02.16.
+ */
+public class ChatAgent extends Agent{
+
+    protected void setup() {
+        // Printout a welcome message
+        System.out.println("Hello! Buyer-agent " + getAID().getName() + " is ready.");
+    }
+
+}
