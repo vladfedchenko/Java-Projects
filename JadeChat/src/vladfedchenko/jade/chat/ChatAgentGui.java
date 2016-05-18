@@ -1,7 +1,5 @@
 package vladfedchenko.jade.chat;
 
-import javafx.scene.input.KeyCode;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
