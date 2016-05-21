@@ -18,6 +18,8 @@ public class App
         Artist artist = dao.getArtist(new Integer(1));
 
         System.out.println(artist.getId() + " " + artist.getName() + " " + artist.getBirthDate());
+
+        System.exit(0);
     }
 
 }

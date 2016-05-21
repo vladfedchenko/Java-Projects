@@ -226,8 +226,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vladfedchenko/lab/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47663552" vertical-offset="0" max-vertical-offset="642">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.58878505" vertical-offset="0" max-vertical-offset="642">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -304,9 +304,9 @@
         <option value="$PROJECT_DIR$/src/main/java/vladfedchenko/lab/dbclasses/Album.java" />
         <option value="$PROJECT_DIR$/src/main/java/vladfedchenko/lab/dbclasses/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/vladfedchenko/lab/dao/GeneralDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vladfedchenko/lab/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vladfedchenko/lab/App.java" />
       </list>
     </option>
   </component>
@@ -755,12 +755,12 @@
       <workItem from="1463423319967" duration="3614000" />
       <workItem from="1463511056846" duration="177000" />
       <workItem from="1463511301068" duration="8537000" />
-      <workItem from="1463838341498" duration="1220000" />
+      <workItem from="1463838341498" duration="1806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13548000" />
+    <option name="totallyTimeSpent" value="14134000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1171,8 +1171,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vladfedchenko/lab/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47663552" vertical-offset="0" max-vertical-offset="642">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.58878505" vertical-offset="0" max-vertical-offset="642">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
