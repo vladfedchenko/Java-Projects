@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="vladfedchenko.lab.dbclasses.AlbumsAvailability" table="ALBUMS_AVAILABILITY">
+        <meta attribute="class-description">
+            This class contains the AlbumsAvailability detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="count" column="count" type="int"/>
+
+        <many-to-one name="store" column="store_id"
+                     class="vladfedchenko.lab.dbclasses.Store" not-null="true"/>
+
+        <many-to-one name="album" column="album_id"
+                     class="vladfedchenko.lab.dbclasses.Album" not-null="true"/>
+
+    </class>
+</hibernate-mapping>

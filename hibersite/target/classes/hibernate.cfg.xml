@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+
+        <!-- Assume test is the database name -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/music
+        </property>
+        <property name="hibernate.connection.username">
+            vladfedchenko
+        </property>
+        <property name="hibernate.connection.password">
+            12345678
+        </property>
+
+        <!--Update database schema-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!--Disable logging-->
+        <property name="show_sql">false</property>
+        <property name="generate_statistics">false</property>
+        <property name="use_sql_comments">false</property>
+
+        <!-- List of XML mapping files -->
+        <mapping resource="Album.hbm.xml"/>
+        <mapping resource="AlbumsAvailability.hbm.xml"/>
+        <mapping resource="Artist.hbm.xml"/>
+        <mapping resource="Song.hbm.xml"/>
+        <mapping resource="Store.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
