@@ -1,10 +1,18 @@
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="vladfedchenko.lab.dao.GeneralDAO" %>
+<%@ page import="vladfedchenko.lab.dbclasses.Artist" %>
 <html>
     <body>
-        <h2>Hello World!</h2>
-            <%for (int i = 0; i < 5; ++i)
-            {%>
-                <h3><%=i%></h3>
-            <%}%>
-        <h1>Ty norm<3</h1>
+        <%{
+            ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+            GeneralDAO dao = (GeneralDAO) context.getBean("generalDao");
+
+            Artist artist = dao.getArtist(new Integer(1));
+            %>
+
+            <h1><%=artist.getId()%> <%=artist.getName()%> <%=artist.getBirthDate()%></h1>
+
+        <%}%>
     </body>
 </html>
