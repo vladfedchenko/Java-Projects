@@ -13,10 +13,10 @@
         </id>
         <property name="count" column="count" type="int"/>
 
-        <many-to-one name="store" column="store_id"
+        <many-to-one name="store" column="store_id" fetch="select" cascade="all" lazy="false"
                      class="vladfedchenko.lab.dbclasses.Store" not-null="true"/>
 
-        <many-to-one name="album" column="album_id"
+        <many-to-one name="album" column="album_id" fetch="select" cascade="all" lazy="false"
                      class="vladfedchenko.lab.dbclasses.Album" not-null="true"/>
 
     </class>

@@ -7,6 +7,7 @@ import vladfedchenko.lab.dbclasses.*;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.util.List;
 
 /**
  * Created by vladfedchenko on 5/17/16.
@@ -201,5 +202,24 @@ public class GeneralDAO
         }finally {
             session.close();
         }
+    }
+
+    public List getAllArtists()
+    {
+        Session session = SessionFactorySingleton.getInstance().openSession();
+        List toRet = null;
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            toRet = session.createCriteria(Artist.class).list();
+            tx.commit();
+        }catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+            toRet = null;
+        }finally {
+            session.close();
+        }
+        return toRet;
     }
 }

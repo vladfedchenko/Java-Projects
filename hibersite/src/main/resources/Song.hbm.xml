@@ -13,7 +13,7 @@
         </id>
         <property name="name" column="name" type="string"/>
         <property name="length" column="length" type="time"/>
-        <many-to-one name="album" column="album_id"
+        <many-to-one name="album" column="album_id" fetch="select" cascade="all" lazy="false"
                      class="vladfedchenko.lab.dbclasses.Album" not-null="true"/>
     </class>
 </hibernate-mapping>

@@ -14,7 +14,7 @@
         <property name="name" column="name" type="string"/>
         <property name="birthDate" column="birth_date" type="date"/>
 
-        <set name="albums">
+        <set name="albums" fetch="select" cascade="all" lazy="false">
             <key column="artist_id"/>
             <one-to-many class="vladfedchenko.lab.dbclasses.Album"/>
         </set>
